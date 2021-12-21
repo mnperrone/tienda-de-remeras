@@ -41,12 +41,14 @@ if (cart.length > 0) {
     const removedItemId = cart.findIndex( (item) =>{
       return item.id == id;
     })
-    console.log(removedItemId);
+    total = 0;
     let removed = cart.splice(removedItemId, 1);
+    console.log(removed);
+    console.log(cart);
     $('#cart').empty();
     if (cart.length > 0) {
       for (const producto of cart) {
-          total = total + producto.price * producto.cantidad;
+          total += producto.price * producto.cantidad;
           const carritoContainer = document.createElement("div");
           carritoContainer.className = "producto-carrito";
           carritoContainer.innerHTML = `
