@@ -1,0 +1,165 @@
+/*----FOOTER STYLES----*/
+/* Mobile First */
+@media (min-width: 100px) and (max-width: 375px) {
+.mobileFooterBtn {
+    display: none;
+}
+
+
+
+/*METODOLOGÍA BEM* - SOCIAL MEDIA ICONS*/
+.mediaIcons {
+    display: flex;
+    align-items: center;
+}
+/* BLOQUE */
+.fa {
+    padding: 0.7em;
+    font-size: 30px;
+    height: 33%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+/* ELEMENTOS */
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: sienna;
+    color: white;
+} 
+/* MODIFICADOR */
+.fa:hover {
+    opacity: 0.7;
+}
+
+footer {
+    background-color: #ece5ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2px;
+}
+.logoFooter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: left;
+    text-decoration: none;
+    background: none;
+    margin-left: 5px;
+    padding-top: 2px;
+}
+div ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0.5em;
+}
+div ul li {
+    display: inline;
+    margin-right: 0.5em;
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+div ul li a {
+    text-decoration: none;
+}
+div ul li a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: slateblue;
+}
+.divNav {
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+/* Large Mobile & Desktop Styles */
+@media (min-width: 376px) and (max-width: 5000px) {
+    /*
+    .mobileFooterBtn {
+        display: none;
+    }*/
+    .mediaIcons {
+        display: flex;
+        align-items: center;
+    }
+    /* BLOQUE */
+    .fa {
+        padding: 0.7em;
+        font-size: 30px;
+        height: 33%;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+    /* ELEMENTOS */
+    .fa-facebook {
+        background-color: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background-color: #55ACEE;
+        color: white;
+    }
+    .fa-instagram {
+        background: sienna;
+        color: white;
+    } 
+    /* MODIFICADOR */
+    .fa:hover {
+        opacity: 0.7;
+    }
+    footer {
+        background-color: #ece5ff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 2px;
+
+        .logoFooter {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            font-weight: lighter;
+            font-style: italic;
+            text-align: left;
+            text-decoration: none;
+            background: none;
+            margin-left: 5px;
+            padding-top: 2px;
+            }    
+        div ul {
+            list-style: none;
+            list-style-type: none;
+            margin: 0.5em;
+        }
+        div ul li {
+            display: inline;
+            margin-right: 0.5em;
+            margin-right: 0.5em;
+            font-weight: bold;
+        }
+        div ul li a {
+            text-decoration: none;
+        }
+        div ul li a:hover {
+            text-decoration: none;
+            color: white;
+            background-color: slateblue;
+        }
+        .divNav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

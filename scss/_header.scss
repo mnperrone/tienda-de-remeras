@@ -1,0 +1,264 @@
+/*----HEADER Styles----*/
+/* Mobile First */
+@media (min-width: 100px) and (max-width: 375px) {
+    .mobileFooterBtn {
+        display: none;
+    }
+    header {
+        background-color: #ece5ff;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainNav {
+        display: flex;
+        align-items: center;
+    }
+    .logoHeader {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+        font-weight: lighter;
+        font-style: italic;
+        text-align: left;
+        text-decoration: none;
+        display: inline;
+        background: none;
+        padding-top: 5px;
+    }
+    .nav-logo {
+        height: 47px;
+        width: 180px;
+        padding-left: 5px;
+        border-style: groove;
+        border-width: thin;
+        border-radius: 10px;
+    }
+    /* Mobile Nav */
+    
+    .mobileNav {
+        display: flex;
+        align-self: center;
+    }
+      
+    ul{
+        
+    }
+      
+      input:checked  ~ ul{
+        display:block;
+      }
+      
+      #menu {
+        display: none;
+      }
+      
+      .labelMenu {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      
+      /* Estilo del boton cuando se pasa el mouse por encima*/
+      .labelMenu:hover{
+        background: grey;
+      }
+      
+      /* Estilo del boton cuando el menú está expandido*/
+      input:checked ~ label {
+        background: lightgrey; 
+    }
+      
+      ul{
+        margin-top:0;
+        padding: 0;
+        display: none;
+    }
+      
+      li {
+        display: block;
+        background: lightgrey;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        text-align: center;
+      }
+    
+      li:hover {
+        filter: brightness(110%);
+      }
+      ul li a {
+          text-decoration: none;
+      }
+    
+    /* End of Mobile Nav */
+    }
+
+
+
+
+/* Mobile First */
+@media (min-width: 376px) and (max-width: 560px) {
+header {
+    background-color: #ece5ff;
+    display: flex;
+    justify-content: space-between;
+}
+.mainNav {
+    display: flex;
+    align-items: center;
+}
+.logoHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: left;
+    text-decoration: none;
+    display: inline;
+    background: none;
+    padding-top: 5px;
+}
+.nav-logo {
+    height: 47px;
+    width: 180px;
+    padding-left: 5px;
+    border-style: groove;
+    border-width: thin;
+    border-radius: 10px;
+}
+/* Mobile Nav */
+
+  .mobileNav {
+    display: flex;
+    align-self: center;
+    ul{
+        margin-top:0;
+        padding: 0;
+        width: 100px;
+    li {
+        display: block;
+        background: lightgrey;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        text-align: center;
+        }
+    }
+  }
+  
+ul{
+    display: none;
+  }
+ul.mobileFooterBtn {
+    display: contents;
+}
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+  
+  #menu {
+    display: none;
+  }
+  
+  .labelMenu {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+
+}
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  .labelMenu:hover{
+    background: grey;
+  }
+  
+  /* Estilo del boton cuando el menú está expandido*/
+  input:checked ~ label {
+    background: lightgrey; 
+}
+
+  
+  
+
+  li:hover {
+    filter: brightness(110%);
+  }
+  ul li a {
+      text-decoration: none;
+  }
+
+/* End of Mobile Nav */
+}
+
+/* Estilos Desktop */
+@media (min-width: 561px) and (max-width: 5000px) {
+
+    header {
+        background-color: #ece5ff;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logoHeader {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+        font-weight: lighter;
+        font-style: italic;
+        text-align: left;
+        text-decoration: none;
+        display: inline;
+        background: none;
+        padding-top: 5px;
+    }
+    .mobileNav {
+        display: none;
+    }
+    .nav-logo {
+        height: 47px;
+        width: 180px;
+        padding-left: 5px;
+        border-style: groove;
+        border-width: thin;
+        border-radius: 10px;
+    }
+    nav ul {
+        list-style: none;
+        list-style-type: none;
+        margin: 0.5em;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 0.5em;
+        margin-right: 0.5em;
+        font-weight: bold;
+    }
+    nav ul li a {
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        text-decoration: none;
+        color: white;
+        background-color: slateblue;
+    }
+    .mainNav {
+        float: right;
+        align-self: center;
+    }
+
+}
+

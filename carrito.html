@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--SEO-->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script>
+    <META NAME="Title" CONTENT="REMERUSKIS remeras de rock">
+    <meta name="subject" content="venta remeras rock nacional">
+    <meta name="Description" content="REMERUSKIS es un sitio web pensado para ofrecer las mejores remeras de rock naciona, algo de internacional, con eje en aquellas bandas que marcaron la cultura de los ´80 y los ´90. También podemos hacer estampados de diseños que no tengamos.">
+    <meta name="Keywords" content="remeras, rock nacional, rock internacional, los redondos, callejeros, acd, pappo, estampados, envios.">
+    <meta name="robots" content="all">
+</head>
+<body>
+    <header>
+        <div class="logoHeader">
+            <a href="index.html" class="logoHeader">
+                <img src="img/logo-noBG.png" class="nav-logo" alt="">
+            </a></div>
+        <nav class="mainNav">
+            <ul>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="carrito.html" id="carritoNumber">CARRITO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+        <nav class="mobileNav">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="labelMenu"> ☰ </label>
+            <ul>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="carrito.html" id="carritoAcumMobile">CARRITO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div id="cart"></div>
+    <a name="cart"></a>
+
+        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+        <div class="jumbotron">
+            <div class="platita">
+                <h1 class="display-4">¡Paso final !</h1>
+                <p class="lead">Estas a punto de pagar con paypal:
+                    <h4 class="totalPaypal">
+            
+                    </h4>
+                </p>
+            </div>
+            <div id="paypal-button-container"></div> 
+        </div>
+
+    
+    </main>
+    <footer>
+        <div class="logoFooter"><a href="index.html" class="logoFooter">
+            <img src="img/logo-noBG.png" class="nav-logo" alt="">
+        </a></div>
+        <div class="mediaIcons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div>
+            <ul class="mobileFooterBtn">
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script>
+        $('.totalPaypal').prepend("$ " + total);
+        // Render the PayPal button into #paypal-button-container
+        paypal.Buttons({
+
+            // Set up the transaction
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: `${total}`,
+                        }
+                    }]
+                });
+            },
+
+            // Finalize the transaction
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    // Show a success message to the buyer
+                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                });
+            }
+
+
+        }).render('#paypal-button-container');
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+/*----Index.html Styles----*/
+
+/* Mobile First*/
+@media (min-width: 100px) and (max-width: 560px) {
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .mainContainer a {
+        img {
+            width: 80%;
+            margin-top: 20px;
+            display: flex;
+            border-radius: 45px;
+            border-style: ridge;
+            border-width: thick;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .mainContainer p {
+        font-family: 'Lato', sans-serif;
+        color: black;
+        font-style: oblique;
+        text-align: center;
+        align-self: center;
+        line-height: 40px;
+        width: 90%;
+        display: flex;
+    }
+}  
+
+/* Estilos Desktop */
+@media (min-width: 560px) and (max-width: 5000px) {
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    } 
+    .mainContainer h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .mainContainer img {
+            width: 400px;
+            margin-top: 5px;
+            display: flex;
+            border-radius: 45px;
+            border-style: ridge;
+            border-width: thick;
+    } 
+    .mainContainer p {
+            width: 350px;
+            font-family: 'Lato', sans-serif;
+            color: black;
+            font-style: oblique;
+            text-align: center;
+            margin-left: 20px;
+            align-self: center;
+            line-height: 40px;
+            display: flex;
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "clase-0",
+  "version": "1.0.0",
+  "description": "#Texto de presentación: #\"Las remeras de esas bandas eternas con las que aprendiste el valor de la música, siempre a tu alcance. #También podes mandarnos tu diseño y nosotros lo convertimos en tu remera!\"",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^2.0.12",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasnicolasperrone/CoderHouse-WebDevelopment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasnicolasperrone/CoderHouse-WebDevelopment/issues"
+  },
+  "homepage": "https://github.com/matiasnicolasperrone/CoderHouse-WebDevelopment#readme"
+}

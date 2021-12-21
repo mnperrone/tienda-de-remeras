@@ -1,0 +1,59 @@
+/*----remera.html Styles----*/
+.remera_container {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 50%;
+    min-width: min-content;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+    h2 {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;    
+    }
+    img {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    p {
+        display: flex;
+        padding-left: 13px;
+        padding-right: 5px;
+        font-family: fantasy;
+        text-align: center;
+        margin: auto 0px;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        h3 {
+            width: 100%;
+            text-align: center;
+            letter-spacing: 3px;
+          }
+        }
+    .boton {
+        width: 60%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding-bottom: 0px;
+        text-align: center;
+        background-color: darkgray;
+        border-style: outset;
+        border-radius: 13px;
+        text-decoration: none;
+        
+    }
+    .boton:hover {
+        border-style: inset;
+    }
+}   

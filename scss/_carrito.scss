@@ -1,0 +1,45 @@
+/*----Carrito.html Styles---*/
+.optionsContainer {
+    display: flex;
+}
+.talleContainer, .colorContainer, .pagoContainer, .numTarjetaContainer {
+    font-family: system-ui;
+    font-weight: 600;
+    color: black;
+}
+.carrito {
+    background-color: #673AED;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-self: center;
+    border-width: 25px;
+    border-style: ridge;
+    border-color: #855EF9;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    p {
+        font-family: system-ui;
+        font-weight: 700;
+    }
+}
+.nombreCarrito {
+    background-color: #ECE5FF;
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 5px;
+    h2 {
+        text-align: center;
+    }
+}
+.payBtn {
+    border-radius: 30px;
+    border-style: outset;
+    width: 5rem;
+    height: 3rem;
+    background-color: #ECE5FF;
+    font-family: -webkit-pictograph;
+}

@@ -1,0 +1,64 @@
+@import '_carrito.scss';
+@import 'carritoJS';
+@import 'footer';
+@import 'header';
+@import 'index';
+@import 'lightbox';
+@import 'login';
+@import 'modal';
+@import '_remera.scss';
+@import '_tienda.scss';
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+main {
+  background-color: #BBAAEF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 560px;
+}
+
+.textoUno  {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blue;
+  font-style: italic;
+  text-align: center;
+  padding-right: 10px;
+  margin-left: 20px;
+  width: 190px;
+  padding-top: 50px;
+}
+
+.textoDos  {
+  font-family: cursive;
+  color: blue;
+  font-style: oblique;
+  text-align: center;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.scss.map */
