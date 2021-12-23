@@ -45,6 +45,10 @@ if (cart.length > 0) {
     let removed = cart.splice(removedItemId, 1);
     console.log(removed);
     console.log(cart);
+    // Actualizar localStorage
+    localStorage.clear();
+    localStorage.setItem( 'carritos', JSON.stringify(cart));
+
     $('#cart').empty();
     if (cart.length > 0) {
       for (const producto of cart) {
@@ -75,5 +79,3 @@ if (cart.length > 0) {
         $('.cart').css('margin-top', '70px');
         $('.platita').hide();
   }}
-
-  //"<p>El carrito se encuentra vacío</p>"
